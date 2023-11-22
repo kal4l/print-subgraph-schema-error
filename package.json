@@ -1,0 +1,14 @@
+{
+  "name": "print-subgraph-schema-error",
+  "version": "1.0.0",
+  "scripts": {
+    "print-schema": "ts-node src/print-schema.ts"
+  },
+  "dependencies": {
+    "@apollo/subgraph": "2.5.7",
+    "@graphql-tools/utils": "^10.0.10",
+    "apollo-server-core": "^3.13.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}

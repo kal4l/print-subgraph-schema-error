@@ -1,0 +1,21 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type SubgraphType {
+  id: ID!
+  external: ExternalType
+}
+
+extend type ExternalType @key(fields: "id") {
+  id: ID! @external
+}
+
+type Query {
+  someQuery: SubgraphType
+}
+
+type Mutation {
+  someMutation(input: String!): SubgraphType
+}
